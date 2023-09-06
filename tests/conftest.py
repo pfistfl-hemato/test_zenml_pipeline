@@ -4,7 +4,7 @@ from src.configs import TrainerConfig, ModelConfigB, ModelConfigC
 
 
 def patch_config(config: BaseModel):
-    return config  # type(config)(**config.dict())
+    return type(config)(**config.dict())
 
 
 @pytest.fixture()
