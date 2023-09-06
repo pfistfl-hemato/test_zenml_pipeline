@@ -2,6 +2,7 @@ from pydantic import BaseModel, Extra
 from zenml import step
 from typing import List
 import enum
+import copy
 
 
 class BaseConfig(BaseModel):
